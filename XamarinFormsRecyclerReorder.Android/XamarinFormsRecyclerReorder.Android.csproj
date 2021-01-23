@@ -60,6 +60,10 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CollectionViewRenderers\ReorderCollectionViewRenderer.cs" />
+    <Compile Include="CollectionViewRenderers\ReorderGroupableItemsViewAdapter.cs" />
+    <Compile Include="CollectionViewRenderers\TouchListenerHelper.cs" />
+    <Compile Include="CollectionViewRenderers\IOnStartDragListener.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -86,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
+    <Folder Include="CollectionViewRenderers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinFormsRecyclerReorder\XamarinFormsRecyclerReorder.csproj">
