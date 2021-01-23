@@ -223,6 +223,10 @@ namespace XamarinFormsRecyclerReorder.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_out = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_in = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.design_snackbar_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_out = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.design_snackbar_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromLeft = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.EnterFromLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromRight = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.EnterFromRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToLeft = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.ExitToLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToRight = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.ExitToRight;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_appbar_state_list_animator = global::XamarinFormsRecyclerReorder.Droid.Resource.Animator.design_appbar_state_list_animator;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_fab_hide_motion_spec = global::XamarinFormsRecyclerReorder.Droid.Resource.Animator.design_fab_hide_motion_spec;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_fab_show_motion_spec = global::XamarinFormsRecyclerReorder.Droid.Resource.Animator.design_fab_show_motion_spec;
@@ -1422,6 +1426,7 @@ namespace XamarinFormsRecyclerReorder.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_view = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.abc_search_view;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_select_dialog_material = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_tooltip = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.abc_tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.BottomTabLayout = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.BottomTabLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_navigation_item = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_sheet_dialog = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.design_layout_snackbar;
@@ -1436,6 +1441,7 @@ namespace XamarinFormsRecyclerReorder.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.design_navigation_menu;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu_item = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.design_navigation_menu_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_text_input_password_icon = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.FlyoutContent = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_layout_snackbar = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.mtrl_layout_snackbar_include = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.mtrl_layout_snackbar_include;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_action = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.notification_action;
@@ -1453,9 +1459,11 @@ namespace XamarinFormsRecyclerReorder.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_media_custom = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.notification_template_media_custom;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_chronometer = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.notification_template_part_chronometer;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_time = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.notification_template_part_time;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.RootLayout = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.RootLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_item_material = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.select_dialog_item_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_multichoice_material = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.select_dialog_multichoice_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_singlechoice_material = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.ShellContent = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_home_description = global::XamarinFormsRecyclerReorder.Droid.Resource.String.abc_action_bar_home_description;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_up_description = global::XamarinFormsRecyclerReorder.Droid.Resource.String.abc_action_bar_up_description;
@@ -2789,6 +2797,10 @@ namespace XamarinFormsRecyclerReorder.Droid
 			global::Xamarin.Forms.Platform.Resource.Animation.design_bottom_sheet_slide_out = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_snackbar_in = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.design_snackbar_in;
 			global::Xamarin.Forms.Platform.Resource.Animation.design_snackbar_out = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.design_snackbar_out;
+			global::Xamarin.Forms.Platform.Resource.Animation.EnterFromLeft = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.EnterFromLeft;
+			global::Xamarin.Forms.Platform.Resource.Animation.EnterFromRight = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.EnterFromRight;
+			global::Xamarin.Forms.Platform.Resource.Animation.ExitToLeft = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.ExitToLeft;
+			global::Xamarin.Forms.Platform.Resource.Animation.ExitToRight = global::XamarinFormsRecyclerReorder.Droid.Resource.Animation.ExitToRight;
 			global::Xamarin.Forms.Platform.Resource.Animator.design_appbar_state_list_animator = global::XamarinFormsRecyclerReorder.Droid.Resource.Animator.design_appbar_state_list_animator;
 			global::Xamarin.Forms.Platform.Resource.Animator.design_fab_hide_motion_spec = global::XamarinFormsRecyclerReorder.Droid.Resource.Animator.design_fab_hide_motion_spec;
 			global::Xamarin.Forms.Platform.Resource.Animator.design_fab_show_motion_spec = global::XamarinFormsRecyclerReorder.Droid.Resource.Animator.design_fab_show_motion_spec;
@@ -3988,6 +4000,7 @@ namespace XamarinFormsRecyclerReorder.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_search_view = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.abc_search_view;
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_select_dialog_material = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.abc_select_dialog_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.abc_tooltip = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.abc_tooltip;
+			global::Xamarin.Forms.Platform.Resource.Layout.BottomTabLayout = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.BottomTabLayout;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_bottom_navigation_item = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_bottom_sheet_dialog = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_layout_snackbar = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.design_layout_snackbar;
@@ -4002,6 +4015,7 @@ namespace XamarinFormsRecyclerReorder.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_menu = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.design_navigation_menu;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_navigation_menu_item = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.design_navigation_menu_item;
 			global::Xamarin.Forms.Platform.Resource.Layout.design_text_input_password_icon = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Xamarin.Forms.Platform.Resource.Layout.FlyoutContent = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_layout_snackbar = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.mtrl_layout_snackbar;
 			global::Xamarin.Forms.Platform.Resource.Layout.mtrl_layout_snackbar_include = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.mtrl_layout_snackbar_include;
 			global::Xamarin.Forms.Platform.Resource.Layout.notification_action = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.notification_action;
@@ -4019,9 +4033,11 @@ namespace XamarinFormsRecyclerReorder.Droid
 			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_media_custom = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.notification_template_media_custom;
 			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_part_chronometer = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.notification_template_part_chronometer;
 			global::Xamarin.Forms.Platform.Resource.Layout.notification_template_part_time = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.notification_template_part_time;
+			global::Xamarin.Forms.Platform.Resource.Layout.RootLayout = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.RootLayout;
 			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_item_material = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.select_dialog_item_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_multichoice_material = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.select_dialog_multichoice_material;
 			global::Xamarin.Forms.Platform.Resource.Layout.select_dialog_singlechoice_material = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Xamarin.Forms.Platform.Resource.Layout.ShellContent = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Resource.Layout.support_simple_spinner_dropdown_item = global::XamarinFormsRecyclerReorder.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_home_description = global::XamarinFormsRecyclerReorder.Droid.Resource.String.abc_action_bar_home_description;
 			global::Xamarin.Forms.Platform.Resource.String.abc_action_bar_up_description = global::XamarinFormsRecyclerReorder.Droid.Resource.String.abc_action_bar_up_description;
@@ -5393,16 +5409,16 @@ namespace XamarinFormsRecyclerReorder.Droid
 			public const int design_snackbar_out = 2130771983;
 			
 			// aapt resource value: 0x7F010010
-			public const int enterfromleft = 2130771984;
+			public const int EnterFromLeft = 2130771984;
 			
 			// aapt resource value: 0x7F010011
-			public const int enterfromright = 2130771985;
+			public const int EnterFromRight = 2130771985;
 			
 			// aapt resource value: 0x7F010012
-			public const int exittoleft = 2130771986;
+			public const int ExitToLeft = 2130771986;
 			
 			// aapt resource value: 0x7F010013
-			public const int exittoright = 2130771987;
+			public const int ExitToRight = 2130771987;
 			
 			static Animation()
 			{
@@ -9183,7 +9199,7 @@ namespace XamarinFormsRecyclerReorder.Droid
 			public const int abc_tooltip = 2131427355;
 			
 			// aapt resource value: 0x7F0B001C
-			public const int bottomtablayout = 2131427356;
+			public const int BottomTabLayout = 2131427356;
 			
 			// aapt resource value: 0x7F0B001D
 			public const int browser_actions_context_menu_page = 2131427357;
@@ -9234,7 +9250,7 @@ namespace XamarinFormsRecyclerReorder.Droid
 			public const int design_text_input_password_icon = 2131427372;
 			
 			// aapt resource value: 0x7F0B002D
-			public const int flyoutcontent = 2131427373;
+			public const int FlyoutContent = 2131427373;
 			
 			// aapt resource value: 0x7F0B002E
 			public const int mtrl_layout_snackbar = 2131427374;
@@ -9288,7 +9304,7 @@ namespace XamarinFormsRecyclerReorder.Droid
 			public const int notification_template_part_time = 2131427390;
 			
 			// aapt resource value: 0x7F0B003F
-			public const int rootlayout = 2131427391;
+			public const int RootLayout = 2131427391;
 			
 			// aapt resource value: 0x7F0B0040
 			public const int select_dialog_item_material = 2131427392;
@@ -9300,7 +9316,7 @@ namespace XamarinFormsRecyclerReorder.Droid
 			public const int select_dialog_singlechoice_material = 2131427394;
 			
 			// aapt resource value: 0x7F0B0043
-			public const int shellcontent = 2131427395;
+			public const int ShellContent = 2131427395;
 			
 			// aapt resource value: 0x7F0B0044
 			public const int support_simple_spinner_dropdown_item = 2131427396;
