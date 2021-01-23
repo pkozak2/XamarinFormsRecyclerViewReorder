@@ -4,6 +4,7 @@ using Android.Support.V7.Widget;
 using Android.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using static Android.Views.View;
 
 namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
 {
@@ -25,7 +26,7 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
         bool OnItemMove(int fromPosition, int toPosition);
     }
 
-    public class ReorderGroupableItemsViewAdapter<TItemsView, TItemsViewSource> : GroupableItemsViewAdapter<TItemsView, TItemsViewSource>
+    public class ReorderGroupableItemsViewAdapter<TItemsView, TItemsViewSource> : GroupableItemsViewAdapter<TItemsView, TItemsViewSource>, IItemTouchHelperAdapter
         where TItemsView : GroupableItemsView
         where TItemsViewSource : IGroupableItemsViewSource
     {

@@ -64,6 +64,7 @@
     <Compile Include="CollectionViewRenderers\ReorderGroupableItemsViewAdapter.cs" />
     <Compile Include="CollectionViewRenderers\TouchListenerHelper.cs" />
     <Compile Include="CollectionViewRenderers\IOnStartDragListener.cs" />
+    <Compile Include="CollectionViewRenderers\SimpleItemTouchHelperCallback.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

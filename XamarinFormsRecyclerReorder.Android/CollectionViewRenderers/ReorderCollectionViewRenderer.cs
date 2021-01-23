@@ -12,17 +12,18 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
 {
     public class ReorderCollectionViewRenderer : GroupableItemsViewRenderer<GroupableItemsView, ReorderGroupableItemsViewAdapter<GroupableItemsView, IGroupableItemsViewSource>, IGroupableItemsViewSource>
     {
-        //private SimpleItemTouchHelperCallback itemHelperCallback;
-        //private ItemTouchHelper mItemTouchHelper;
+        private SimpleItemTouchHelperCallback itemHelperCallback;
+        private ItemTouchHelper mItemTouchHelper;
 
         public ReorderCollectionViewRenderer(Context context) : base(context)
         {
             //ItemsViewAdapter.
-            //  itemHelperCallback = new SimpleItemTouchHelperCallback(ItemsViewAdapter);
+            itemHelperCallback = new SimpleItemTouchHelperCallback(ItemsViewAdapter);
 
-            //  ItemTouchHelper.Callback callback = itemHelperCallback;
-            //  mItemTouchHelper = new ItemTouchHelper(callback);
-            //  mItemTouchHelper.AttachToRecyclerView(recyclerView);
+            ItemTouchHelper.Callback callback = itemHelperCallback;
+            mItemTouchHelper = new ItemTouchHelper(callback);
+
+            mItemTouchHelper.AttachToRecyclerView(this);
         }
 
         protected override void OnElementChanged(ElementChangedEventArgs<ItemsView> elementChangedEvent)
