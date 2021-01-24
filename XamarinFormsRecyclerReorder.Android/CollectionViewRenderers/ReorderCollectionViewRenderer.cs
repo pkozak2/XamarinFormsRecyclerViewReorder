@@ -18,12 +18,7 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
         public ReorderCollectionViewRenderer(Context context) : base(context)
         {
             //ItemsViewAdapter.
-            itemHelperCallback = new SimpleItemTouchHelperCallback(ItemsViewAdapter);
 
-            ItemTouchHelper.Callback callback = itemHelperCallback;
-            mItemTouchHelper = new ItemTouchHelper(callback);
-
-            mItemTouchHelper.AttachToRecyclerView(this);
         }
 
         protected override void OnElementChanged(ElementChangedEventArgs<ItemsView> elementChangedEvent)
@@ -35,6 +30,21 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
         protected override ReorderGroupableItemsViewAdapter<GroupableItemsView, IGroupableItemsViewSource> CreateAdapter()
         {
             return new ReorderGroupableItemsViewAdapter<GroupableItemsView, IGroupableItemsViewSource>(ItemsView);
+        }
+
+        protected override void UpdateAdapter()
+        {
+            base.UpdateAdapter();
+
+            if (ItemsViewAdapter != null)
+            {
+                itemHelperCallback = new SimpleItemTouchHelperCallback(ItemsViewAdapter);
+
+                ItemTouchHelper.Callback callback = itemHelperCallback;
+                mItemTouchHelper = new ItemTouchHelper(callback);
+
+                mItemTouchHelper.AttachToRecyclerView(this);
+            }
         }
     }
 }
