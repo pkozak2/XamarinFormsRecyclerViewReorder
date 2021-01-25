@@ -3,7 +3,7 @@
 namespace XamarinFormsRecyclerReorder.Controls
 {
 
-    public class CustomCollectionView : CollectionView
+    public class CustomCollectionView : SelectableItemsView
     {
         public static readonly BindableProperty ReorderEnabledProperty = BindableProperty.Create(nameof(ReorderEnabled), typeof(bool), typeof(CustomCollectionView), false, BindingMode.OneWay);
         public bool ReorderEnabled

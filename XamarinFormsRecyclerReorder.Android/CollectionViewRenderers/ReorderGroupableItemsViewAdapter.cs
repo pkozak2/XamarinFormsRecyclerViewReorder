@@ -26,9 +26,9 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
         bool OnItemMove(int fromPosition, int toPosition);
     }
 
-    public class ReorderGroupableItemsViewAdapter<TItemsView, TItemsViewSource> : GroupableItemsViewAdapter<TItemsView, TItemsViewSource>, IItemTouchHelperAdapter
-        where TItemsView : GroupableItemsView
-        where TItemsViewSource : IGroupableItemsViewSource
+    public class ReorderGroupableItemsViewAdapter<TItemsView, TItemsViewSource> : SelectableItemsViewAdapter<TItemsView, TItemsViewSource>, IItemTouchHelperAdapter
+        where TItemsView : SelectableItemsView
+        where TItemsViewSource : IItemsViewSource
     {
         //TODO: 
         private IOnStartDragListener mDragStartListener;

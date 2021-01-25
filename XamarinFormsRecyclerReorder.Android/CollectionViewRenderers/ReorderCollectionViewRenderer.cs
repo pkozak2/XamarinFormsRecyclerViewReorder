@@ -10,7 +10,7 @@ using XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers;
 
 namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
 {
-    public class ReorderCollectionViewRenderer : GroupableItemsViewRenderer<GroupableItemsView, ReorderGroupableItemsViewAdapter<GroupableItemsView, IGroupableItemsViewSource>, IGroupableItemsViewSource>
+    public class ReorderCollectionViewRenderer :  SelectableItemsViewRenderer<SelectableItemsView, ReorderGroupableItemsViewAdapter<SelectableItemsView, IItemsViewSource>, IItemsViewSource>
     {
         private SimpleItemTouchHelperCallback itemHelperCallback;
         private ItemTouchHelper mItemTouchHelper;
@@ -27,9 +27,9 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
 
         }
 
-        protected override ReorderGroupableItemsViewAdapter<GroupableItemsView, IGroupableItemsViewSource> CreateAdapter()
+        protected override ReorderGroupableItemsViewAdapter<SelectableItemsView, IItemsViewSource> CreateAdapter()
         {
-            return new ReorderGroupableItemsViewAdapter<GroupableItemsView, IGroupableItemsViewSource>(ItemsView);
+            return new ReorderGroupableItemsViewAdapter<SelectableItemsView, IItemsViewSource>(ItemsView);
         }
 
         protected override void UpdateAdapter()
