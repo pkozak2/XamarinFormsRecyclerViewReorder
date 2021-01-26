@@ -14,5 +14,15 @@ namespace XamarinFormsRecyclerReorder
         {
             InitializeComponent();
         }
+
+        private void Checkbox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            Collection.ReorderEnabled = e.Value;
+        }
+
+        private void Collection_ItemMoved(object sender, Controls.ItemMovedEventArgs e)
+        {
+            LastMove.Text = $"Moved from {e.FromPosition} to: {e.ToPosition}";
+        }
     }
 }

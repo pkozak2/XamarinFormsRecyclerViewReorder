@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.Support.V7.Widget.Helper;
+﻿using Android.Support.V7.Widget.Helper;
 using Android.Support.V7.Widget;
-using Android.Graphics;
 
 namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
 {
@@ -24,43 +12,64 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
     /// </summary>
     public class SimpleItemTouchHelperCallback : ItemTouchHelper.Callback
     {
-        private bool dragEnabled = true;
+        /// <summary>
+        /// Reorderable adapter
+        /// </summary>
+        private IItemTouchHelperAdapter _adapter;
 
-        private bool swipeEnabled = false;
+        /// <summary>
+        /// Private Reorder Enabled property
+        /// </summary>
+        private bool _dragEnabled = false;
 
-        public static float AlphaFull = 1.0f;
-
-        private IItemTouchHelperAdapter mAdapter;
-
-        public SimpleItemTouchHelperCallback(IItemTouchHelperAdapter adapter)
-        {
-            mAdapter = adapter;
-        }
-
+        /// <summary>
+        /// Getter of IsDragEnabled
+        /// </summary>
         public override bool IsLongPressDragEnabled
         {
             get
             {
-                return dragEnabled;
+                return _dragEnabled;
             }
         }
 
-        public void SetLongPressDragEnabled(bool longPressDragEnabled)
+        /// <summary>
+        /// Setter for drag Enabled
+        /// </summary>
+        /// <param name="dragEnabled">New value</param>
+        public void SetLongPressDragEnabled(bool dragEnabled)
         {
-            dragEnabled = longPressDragEnabled;
+            _dragEnabled = dragEnabled;
         }
 
+        /// <summary>
+        /// Not used
+        /// </summary>
+        private bool _swipeEnabled = false;
+
+        /// <summary>
+        /// Not Used
+        /// </summary>
         public override bool IsItemViewSwipeEnabled
         {
             get
             {
-                return swipeEnabled;
+                return _swipeEnabled;
             }
         }
 
+        /// <summary>
+        /// Not used
+        /// </summary>
+        /// <param name="itemViewSwipeEnabled"></param>
         public void SetItemViewSwipeEnabled(bool itemViewSwipeEnabled)
         {
-            swipeEnabled = itemViewSwipeEnabled;
+            _swipeEnabled = itemViewSwipeEnabled;
+        }
+
+        public SimpleItemTouchHelperCallback(IItemTouchHelperAdapter adapter)
+        {
+            _adapter = adapter;
         }
 
         public override int GetMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder)
@@ -74,11 +83,12 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
             }
             else
             {
-                if (IsItemViewSwipeEnabled)
-                {
-                    swipeFlags = ItemTouchHelper.Left | ItemTouchHelper.Right;
-                }
-                else if (IsLongPressDragEnabled)
+                //if (IsItemViewSwipeEnabled)
+                //{
+                //    swipeFlags = ItemTouchHelper.Left | ItemTouchHelper.Right;
+                //}
+                //else
+                if (IsLongPressDragEnabled)
                 {
                     dragFlags = ItemTouchHelper.Up | ItemTouchHelper.Down;
                     swipeFlags = ItemTouchHelper.Start | ItemTouchHelper.End;
@@ -86,7 +96,7 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
             }
             return MakeMovementFlags(dragFlags, swipeFlags);
         }
-
+        
         public override bool OnMove(RecyclerView recyclerView, RecyclerView.ViewHolder source, RecyclerView.ViewHolder target)
         {
             if (source.ItemViewType != target.ItemViewType)
@@ -95,12 +105,17 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
             }
 
             // Notify the adapter of the move
-            return mAdapter.OnItemMove(source.AdapterPosition, target.AdapterPosition);
+            return _adapter.OnItemMove(source.AdapterPosition, target.AdapterPosition);
         }
 
+        /// <summary>
+        /// Not used
+        /// </summary>
+        /// <param name="viewHolder"></param>
+        /// <param name="direction"></param>
         public override void OnSwiped(RecyclerView.ViewHolder viewHolder, int direction)
         {
-
+            
         }
     }
 }

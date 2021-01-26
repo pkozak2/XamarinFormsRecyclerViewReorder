@@ -1,5 +1,4 @@
-﻿using System;
-using Android.Support.V7.Widget;
+﻿using Android.Support.V7.Widget;
 
 namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
 {
@@ -13,5 +12,12 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
         /// </summary>
         /// <param name="viewHolder">The holder of the view to drag.</param>
         void OnStartDrag(RecyclerView.ViewHolder viewHolder);
+
+        /// <summary>
+        /// Not used
+        /// </summary>
+        /// <param name="fromPosition"></param>
+        /// <param name="toPosition"></param>
+        void OnItemMove(int fromPosition, int toPosition);
     }
 }

@@ -6,7 +6,9 @@
     xmlns:controls="clr-namespace:XamarinFormsRecyclerReorder.Controls">
 
     <StackLayout>
-        <controls:CustomCollectionView>
+        <CheckBox x:Name="Checkbox" CheckedChanged="Checkbox_CheckedChanged" />
+        <Label x:Name="LastMove" Text="NoMove!" />
+        <controls:CustomCollectionView x:Name="Collection" ItemMoved="Collection_ItemMoved">
             <controls:CustomCollectionView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>mono</x:String>
