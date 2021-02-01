@@ -67,7 +67,11 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
             _swipeEnabled = itemViewSwipeEnabled;
         }
 
-        public SimpleItemTouchHelperCallback(IItemTouchHelperAdapter adapter)
+        public SimpleItemTouchHelperCallback()
+        {
+        }
+
+        public void SetAdapter(IItemTouchHelperAdapter adapter)
         {
             _adapter = adapter;
         }
@@ -96,14 +100,14 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
             }
             return MakeMovementFlags(dragFlags, swipeFlags);
         }
-        
+
         public override bool OnMove(RecyclerView recyclerView, RecyclerView.ViewHolder source, RecyclerView.ViewHolder target)
         {
             if (source.ItemViewType != target.ItemViewType)
             {
                 return false;
             }
-
+            if (_adapter == null) return false;
             // Notify the adapter of the move
             return _adapter.OnItemMove(source.AdapterPosition, target.AdapterPosition);
         }
@@ -115,7 +119,7 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
         /// <param name="direction"></param>
         public override void OnSwiped(RecyclerView.ViewHolder viewHolder, int direction)
         {
-            
+
         }
     }
 }

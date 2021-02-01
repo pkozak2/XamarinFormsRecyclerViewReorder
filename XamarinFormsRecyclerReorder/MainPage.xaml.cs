@@ -17,7 +17,7 @@ namespace XamarinFormsRecyclerReorder
 
         private void Checkbox_CheckedChanged(object sender, CheckedChangedEventArgs e)
         {
-            Collection.ReorderEnabled = e.Value;
+            Collection.DragEnabled = e.Value;
         }
 
         private void Collection_ItemMoved(object sender, Controls.ItemMovedEventArgs e)

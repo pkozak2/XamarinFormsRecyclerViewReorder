@@ -40,8 +40,6 @@ namespace XamarinFormsRecyclerReorder.Droid.CollectionViewRenderers
 
         public bool OnItemMove(int fromPosition, int toPosition)
         {
-            // TODO: move items?
-            //mItems.Move(fromPosition, toPosition);
             mDragStartListener.OnItemMove(fromPosition, toPosition);
             NotifyItemMoved(fromPosition, toPosition);
             return true;

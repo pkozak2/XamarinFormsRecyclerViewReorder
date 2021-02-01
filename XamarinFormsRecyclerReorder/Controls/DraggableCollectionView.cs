@@ -19,11 +19,11 @@ namespace XamarinFormsRecyclerReorder.Controls
 
     public class DraggableCollectionView : SelectableItemsView
     {
-        public static readonly BindableProperty ReorderEnabledProperty = BindableProperty.Create(nameof(ReorderEnabled), typeof(bool), typeof(DraggableCollectionView), false, BindingMode.OneWay);
-        public bool ReorderEnabled
+        public static readonly BindableProperty DragEnabledProperty = BindableProperty.Create(nameof(DragEnabled), typeof(bool), typeof(DraggableCollectionView), false, BindingMode.OneWay);
+        public bool DragEnabled
         {
-            get => (bool)GetValue(ReorderEnabledProperty);
-            set => SetValue(ReorderEnabledProperty, value);
+            get => (bool)GetValue(DragEnabledProperty);
+            set => SetValue(DragEnabledProperty, value);
         }
 
         public static readonly BindableProperty ItemMovedCommandProperty = BindableProperty.Create(nameof(ItemMovedCommand), typeof(Command<ItemMovedEventArgs>), typeof(DraggableCollectionView));
